@@ -1,0 +1,34 @@
+/* modifica impostazione comando fieldset, normalmente si comporta come un div, lo voglio come span, facendolo in questo file css e richiamandolo a monte dell'html varrà per tutti i fieldset, lo si può fare anche inline con il comando style */
+.headerclass{
+    margin: 0px 0px;
+    background-color: rgb(222,222,222);
+    display: flex;
+    justify-content: space-between;
+}
+.headerlogo{
+    flex: 1;
+    margin: 20px;
+}
+.headernavs{
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    gap: 1.1em;
+    text-align: flex-end;
+}
+.headernavs a{
+    text-decoration: none;
+}
+h1{
+    text-shadow: 3px 3px 12px black;
+    color: rgb(160,0,0);
+    text-align: center;
+}
+footer{
+    background-color: rgb(222,222,222);
+}
+fieldset{
+    display: inline-block;
+    border-style: outset;
+    border-width: 2px;
+}

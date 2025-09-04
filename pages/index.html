@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8"> <!-- Imposta la codifica standard -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"> <!-- Imposta la compatibilità più recente se dovesse incontrare vecchi browser -->
+        <!-- <meta http-equiv="refresh" content="2"> --> <!-- Imposta ogni quanti secondi si refresha da sola la pagina -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Fondamentale per il responsive design per visualizzare bene su ogni schermo mettendo la dimensione dello schermo adoperato e lo zoom a 100% -->
+        <meta name="theme-color" content="#ffffff"> <!-- Impost6a il colore come neutro rispetto al sistema operativo, infa<tti una serie di f, con theme-color lascia al sistema operativo che vede il sito con che tema vederlo-->
+        <link rel="stylesheet" href="../style/stylesheet.css">
+        <title>UniShare</title>
+        <link rel="icon" type="image/jpeg" href="../images/logo.jpeg">
+    </head>
+
+    <body>
+        <header class="headerclass">
+            <div class="headerlogo">
+                <!-- Logo reffato linkato homepage -->
+                <a href="./index.html" target="" title="Homepage">
+                    <img src="../images/logo.jpeg" id="logo"
+                    height="100" alt="UniShare Logo">
+                </a>
+            </div>
+            <nav class="headernavs">
+                <a href="./index.html">Homepage</a> <!-- href è un hyperlink reference che richiede # nel caso richiami un'altra area con il nome dell'id in richiamo a seguire -->
+                <a href="#chisiamo">Chi siamo</a>
+                <a href="#contacts">Contatti</a>
+            </nav>
+            <br>
+        </header>
+        
+        <h1>UniShare official web app</h1>
+        
+        <main>
+            <!-- Procedura di registrazione -->
+            <form action="/signupexmp" method="post" autocomplete="on" target=""> <!-- post per dati sensibili e get per dati non sensibili -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" minleght="3" maxlength="20" placeholder="Username" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" minleght="8" maxlength="20" placeholder="Password" required>
+                <br>
+                <label>Università:</label>
+                <select>
+                    <option value="Ferrara">Università degli Studi di Ferrara</option>
+                </select>
+                <br>
+                <label>Tipo di laurea:</label>
+                <select>
+                    <option value="triennale">Percorso triennale</option>
+                    <option value="magistrale">Percorso magistrale</option>
+                </select>
+                <br>
+                <label>Percorso di studi:</label>
+                <select>
+                    <option value="fisica">Fisica</option>
+                    <option value="inge-civ">Ingegneria civile</option>
+                    <option value="inge-elinf">Ingegneria Elettronica e Informatica</option>
+                    <option value="inge-mec">Ingegneria Meccanica</option>
+                </select>
+                <br>
+                <label>Acconsento al trattamento dei miei dati:</label>
+                <input type="checkbox" required>
+                <br>
+                <button>Iscriviti</button>
+            </form>
+
+            <br><br>
+
+            <form action="/subscribeexmp" method="post" autocomplete="on" target="_blank">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <input type="email" name="email" placeholder="esempio@mail.org">
+                    <button>Ok</button>
+                </fieldset>
+            </form>
+        
+
+            <h4>Descrizione</h4>
+            <p>Sito per il progetto <mark>UniShare</mark></p>
+            <h4>Obiettivi:</h4>
+            <ol type="I">
+                <li>Dare un minimo di struttura</li>
+                <li>Dare stile con css</li>
+                <li>Implementare funzioni in javascript</li>
+            </ol>
+
+        </main>
+
+        <br><br><br>
+        <hr>
+    </body>
+
+    <footer>
+        <h4 id="chisiamo">Chi siamo:</h4>
+        <p>Sono un ragazzo con un'idea</p>
+        <h4 id="contacts">Contatti</h4> <!-- id dichiara il nome per essere richiamato, uguale a LaTex-->
+        <ul style="list-style-type: disc"> <!-- ul sta per unordered list, style imposta che tipo di puntini vogliamo per la lista -->
+            <li><p>Email: </pre><a href="mailto:francesco.volpe1998@gmail.com" target="_blank" title="e-mail">
+            francesco.volpe1998@gmail.com</a></li>
+
+            <li><p>GitHub:</pre>
+            <a href="https://github.com/TheFox43" target="_blank" title="GitHub">
+                TheFox43
+            </a></li>
+
+            <li><p>Donazioni Paypal:</pre>
+            <a href="https://paypal.me/98fox43" target="_blank" title="Paypal">
+                @98fox43
+            </a></li>
+        </ul>
+        
+    </footer>
+</html>
