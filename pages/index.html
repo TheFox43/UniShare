@@ -26,8 +26,8 @@
             </div>
             <nav id="headernav" class="headernavs">
                 <a href="./index.html" alt="Homepage">Homepage</a> <!-- href è un hyperlink reference che richiede # nel caso richiami un'altra area con il nome dell'id in richiamo a seguire -->
-                <a href="./about.html" target="_blank" alt="Chi sono">Chi sono</a>
-                <a href="#contacts" alt="Contacts">Contatti</a>
+                <a href="./about.html" target="_blank" alt="Who I am">Who I am</a>
+                <a href="#contacts" alt="Contacts">Contacts</a>
             </nav>
             <br>
         </header>
@@ -55,7 +55,7 @@
             <article id="signup">
                 <h2>Sign up to start sharing!</h2>
                 <!-- Procedura di registrazione -->
-                <form action="https://httpbin.org/get" method="get" autocomplete="on" target=""> <!-- post per dati sensibili e get per dati non sensibili -->
+                <form action="https://httpbin.org/post" method="post" autocomplete="on" target=""> <!-- post per dati sensibili e get per dati non sensibili -->
                     <p>
                         <label for="firstname">First Name:</label>
                         <input type="text" name="firstname" id="firstname" minleght="3" maxlength="20" placeholder="Jacopo" required autofocus>
@@ -79,7 +79,7 @@
                         </select>
                     </p>
                     <p>
-                        <label for="university">Università:</label>
+                        <label for="university">University:</label>
                         <select>
                             <option value="Ferrara">Università degli Studi di Ferrara</option>
                         </select>
@@ -107,10 +107,10 @@
                         </select>
                     </p>
                     <p>
-                        <label>Acconsento al trattamento dei miei dati:</label>
+                        <label>Agreement checkbox test:</label>
                         <input type="checkbox" required>
                     </p>
-                    <button>Iscriviti</button>
+                    <button>Sign me up!</button>
                 </form>
             </article>
 
@@ -130,13 +130,12 @@
     </body>
 
     <footer>
-        <h4 id="contacts">Contatti</h4> <!-- id dichiara il nome per essere richiamato, uguale a LaTex-->
+        <h4 id="contacts">Contacts</h4> <!-- id dichiara il nome per essere richiamato, uguale a LaTex-->
         <ul style="list-style-type: disc"> <!-- ul sta per unordered list, style imposta che tipo di puntini vogliamo per la lista -->
-            <li><p>GitHub:</pre>
-            <a href="https://github.com/TheFox43/" target="_blank" title="GitHub">
-                TheFox43
-            </a></li>
+            <li>
+                GitHub:
+                <a href="https://github.com/TheFox43/" target="_blank" title="GitHub"> TheFox43</a>
+            </li>
         </ul>
-        
     </footer>
 </html>
