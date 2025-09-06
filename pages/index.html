@@ -24,7 +24,7 @@
                     height="100" alt="UniShare Logo">
                 </a>
             </div>
-            <nav class="headernavs">
+            <nav id="headernav" class="headernavs">
                 <a href="./index.html" alt="Homepage">Homepage</a> <!-- href è un hyperlink reference che richiede # nel caso richiami un'altra area con il nome dell'id in richiamo a seguire -->
                 <a href="./about.html" target="_blank" alt="Chi sono">Chi sono</a>
                 <a href="#contacts" alt="Contacts">Contatti</a>
@@ -73,25 +73,37 @@
                         <input type="password" id="password" name="password" minleght="8" maxlength="20" placeholder="Password" required>
                     </p>
                     <p>
+                        <label for="nationality">Nation of studying:</label>
+                        <select>
+                            <option value="Italy">Italy</option>
+                        </select>
+                    </p>
+                    <p>
                         <label for="university">Università:</label>
                         <select>
                             <option value="Ferrara">Università degli Studi di Ferrara</option>
                         </select>
                     </p>
                     <p>
-                        <label>Tipo di laurea:</label>
+                        <label for="degreetype">Degree type:</label>
                         <select>
-                            <option value="triennale">Percorso triennale</option>
-                            <option value="magistrale">Percorso magistrale</option>
+                            <option value="triennale">Regular degree</option>
+                            <option value="magistrale">Master degree</option>
                         </select>
                     </p>
                     <p>
-                        <label>Percorso di studi:</label>
-                        <select>
-                            <option value="fisica">Fisica</option>
-                            <option value="inge-civ">Ingegneria civile</option>
-                            <option value="inge-elinf">Ingegneria Elettronica e Informatica</option>
-                            <option value="inge-mec">Ingegneria Meccanica</option>
+                        <label for="course">Course:</label>
+                        <select name="course" id="course">
+                            <optgroup label="Scientific Manner">
+                                <option value="physics">Physics</option>
+                                <option value="civ-engineer">Civil Engineering</option>
+                                <option value="elinfo-engineer">Electronic and Informatics Engineering</option>
+                                <option value="mec-engineer">Mechanical Engineering</option>
+                            </optgroup>
+                            <optgroup label="Humanistic Manner">
+                                <option value="phylosophy">Phylosophy</option>
+                                <option value="history">History</option>
+                            </optgroup>
                         </select>
                     </p>
                     <p>
