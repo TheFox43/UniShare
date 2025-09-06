@@ -32,44 +32,75 @@
             <br>
         </header>
         
-        <h1>UniShare Web App Ufficiale</h1>
+        <h1>UniShare Web App</h1>
         
         <main>
-            <!-- Procedura di registrazione -->
-            <form action="/signupexmp" method="post" autocomplete="on" target=""> <!-- post per dati sensibili e get per dati non sensibili -->
-                <label for="username">Username:</label>
-                <input type="text" id="username" minleght="3" maxlength="20" placeholder="Username" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Email" required>
-                <br>
-                <label for="pwd">Password:</label>
-                <input type="password" id="pwd" minleght="8" maxlength="20" placeholder="Password" required>
-                <br>
-                <label>Università:</label>
-                <select>
-                    <option value="Ferrara">Università degli Studi di Ferrara</option>
-                </select>
-                <br>
-                <label>Tipo di laurea:</label>
-                <select>
-                    <option value="triennale">Percorso triennale</option>
-                    <option value="magistrale">Percorso magistrale</option>
-                </select>
-                <br>
-                <label>Percorso di studi:</label>
-                <select>
-                    <option value="fisica">Fisica</option>
-                    <option value="inge-civ">Ingegneria civile</option>
-                    <option value="inge-elinf">Ingegneria Elettronica e Informatica</option>
-                    <option value="inge-mec">Ingegneria Meccanica</option>
-                </select>
-                <br>
-                <label>Acconsento al trattamento dei miei dati:</label>
-                <input type="checkbox" required>
-                <br>
-                <button>Iscriviti</button>
-            </form>
+            <article id="description">
+                <section id="textdescription">
+                    <h2>Description</h2>
+                    <p>This is the official Web App for the <mark>UniShare</mark> project. The point is to create a platform in which you can share your University notes! Isn't that <b>awesome</b>?</p>
+                </section>
+                <section id="objectives">
+                    <h2>Objectives:</h2>
+                    <ol type="I">
+                        <li>Give the site some structure</li>
+                        <li>Put some CSS here and there</li>
+                        <li>Make JavaScript functions</li>
+                    </ol>
+                </section>
+            </article>
+
+            <hr>
+
+            <article id="signup">
+                <h2>Sign up to start sharing!</h2>
+                <!-- Procedura di registrazione -->
+                <form action="https://httpbin.org/get" method="get" autocomplete="on" target=""> <!-- post per dati sensibili e get per dati non sensibili -->
+                    <p>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" minleght="3" maxlength="20" placeholder="Jacopo" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" minleght="3" maxlength="20" placeholder="Gonzales" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="jacopo@gonzales.me" required>
+                    </p>
+                    <p>
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="password" name="password" minleght="8" maxlength="20" placeholder="Password" required>
+                    </p>
+                    <p>
+                        <label for="university">Università:</label>
+                        <select>
+                            <option value="Ferrara">Università degli Studi di Ferrara</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Tipo di laurea:</label>
+                        <select>
+                            <option value="triennale">Percorso triennale</option>
+                            <option value="magistrale">Percorso magistrale</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Percorso di studi:</label>
+                        <select>
+                            <option value="fisica">Fisica</option>
+                            <option value="inge-civ">Ingegneria civile</option>
+                            <option value="inge-elinf">Ingegneria Elettronica e Informatica</option>
+                            <option value="inge-mec">Ingegneria Meccanica</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Acconsento al trattamento dei miei dati:</label>
+                        <input type="checkbox" required>
+                    </p>
+                    <button>Iscriviti</button>
+                </form>
+            </article>
 
             <br><br>
 
@@ -80,17 +111,6 @@
                     <button>Ok</button>
                 </fieldset>
             </form>
-        
-
-            <h4>Descrizione</h4>
-            <p>Sito per il progetto <mark>UniShare</mark></p>
-            <h4>Obiettivi:</h4>
-            <ol type="I">
-                <li>Dare un minimo di struttura</li>
-                <li>Dare stile con css</li>
-                <li>Implementare funzioni in javascript</li>
-            </ol>
-
         </main>
 
         <br><br><br>
@@ -100,17 +120,9 @@
     <footer>
         <h4 id="contacts">Contatti</h4> <!-- id dichiara il nome per essere richiamato, uguale a LaTex-->
         <ul style="list-style-type: disc"> <!-- ul sta per unordered list, style imposta che tipo di puntini vogliamo per la lista -->
-            <li><p>Email: </pre><a href="mailto:francesco.volpe1998@gmail.com" target="_blank" title="e-mail">
-            francesco.volpe1998@gmail.com</a></li>
-
             <li><p>GitHub:</pre>
-            <a href="https://github.com/TheFox43" target="_blank" title="GitHub">
+            <a href="https://github.com/TheFox43/" target="_blank" title="GitHub">
                 TheFox43
-            </a></li>
-
-            <li><p>Donazioni Paypal:</pre>
-            <a href="https://paypal.me/98fox43" target="_blank" title="Paypal">
-                @98fox43
             </a></li>
         </ul>
         
